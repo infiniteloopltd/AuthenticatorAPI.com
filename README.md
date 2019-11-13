@@ -4,3 +4,5 @@
 
 This is an API that you can use to pair your app with the Google Authenticator App, and then use it for two factor authentication within your
 application. 
+
+Please visit [AuthenticatorAPI.com](https://AuthenticatorAPI.com) for more information
