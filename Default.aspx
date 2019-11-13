@@ -161,7 +161,7 @@
     <!-- /container -->
 
 <footer class="text-center">
-    <p> <a href="api.asmx">SOAP Version</a> for .NET </p>
+    <p> <a href="https://github.com/infiniteloopltd/AuthenticatorAPI.com">Open Source</a> on GitHub </p>
     <p>&copy; <%=DateTime.Now.Year %> <a href="http://www.infiniteloop.ie">Infinite Loop Development Ltd</a>. </p>
 </footer>
 
