@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="pair.aspx.cs" Inherits="AuthenticatorAPI.pair" %>
