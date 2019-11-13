@@ -11,9 +11,8 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700,900' rel='stylesheet' type='text/css'>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="Techie Bootstrap 3 skin">
-    <meta name="keywords" content="bootstrap 3, skin, flat">
-    <meta name="author" content="bootstraptaste">
+    <meta name="description" content="An easy and free way to implement two factor authentication (2FA) in your app.">
+    <meta name="author" content="Infinite Loop Development Ltd">
 
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
