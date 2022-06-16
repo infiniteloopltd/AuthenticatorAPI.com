@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: windows-2019
 
     steps:
       - uses: actions/checkout@v2
@@ -35,10 +35,10 @@ jobs:
           path: '/published/**'
 
   deploy_dev:
-    runs-on: windows-latest
+    runs-on: windows-2019
     needs: build
     environment:
-      name: 'production'
+      name: 'dev'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
@@ -52,6 +52,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'otp-auth'
-          slot-name: 'production'
+          slot-name: 'dev'
           publish-profile: ${{ secrets.DEV_AZURE_OTP_PUBLISH_PROFILE }}
           package: .
