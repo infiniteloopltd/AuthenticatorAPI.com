@@ -1,4 +1,5 @@
 ﻿using System.Web.Services;
+using System.Configuration;
 using Google.Authenticator;
 
 namespace AuthenticatorAPI
@@ -6,7 +7,7 @@ namespace AuthenticatorAPI
     /// <summary>
     /// API to generate and validate google authenticator
     /// </summary>
-    [WebService(Namespace = "http://authenticatorapi.com/")]
+    [WebService(Namespace = ConfigurationManager.AppSettings["host"])]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]
     [System.Web.Script.Services.ScriptService]
@@ -19,7 +20,7 @@ namespace AuthenticatorAPI
             var tfa = new TwoFactorAuthenticator();
             var setupInfo = tfa.GenerateSetupCode(appName, appInfo, secretCode, 300, 300);
             var html = "<a title='Manually pair with " + setupInfo.ManualEntryKey +
-                       "' href='https://www.authenticatorapi.com'><img src='" + setupInfo.QrCodeSetupImageUrl.Replace("http://","https://") +
+                       "' href='" + ConfigurationManager.AppSettings["host"] + "'><img src='" + setupInfo.QrCodeSetupImageUrl.Replace("http://","https://") +
                        "' border=0></a>";
             return new PairingInfo { ManualSetupCode = setupInfo.ManualEntryKey, Html = html };
         }
