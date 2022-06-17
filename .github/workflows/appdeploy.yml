@@ -34,9 +34,6 @@ jobs:
   deploy_dev:
     runs-on: windows-2019
     needs: build
-    environment:
-      name: 'dev'
-      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
       - name: Download artifact from build job
@@ -50,11 +47,10 @@ jobs:
           creds: ${{ secrets.AZURE_CREDS }}
           enable-AzPSSession: true
 
-      - name: Deploy to Azure Web App
+      - name: Deploy to DEV
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'otp-auth-datasec-dev'
-          slot-name: 'dev'
           publish-profile: ${{ secrets.DEV_AZURE_OTP_PUBLISH_PROFILE }}
           package: .
