@@ -22,14 +22,19 @@ jobs:
       - name: Restore NuGet packages
         run: nuget install packages.config
 
+      - name: Prepare config
+        run: |
+          del Web.config
+          ren Web.dev.config Web.config
+
       - name: Publish to folder
-        run: msbuild /nologo /verbosity:m /t:Build /t:pipelinePreDeployCopyAllFilesToOneFolder /p:_PackageTempDir="\published\" /p:Configuration=Debug
+        run: msbuild /nologo /verbosity:m /t:Build
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
           name: otp-auth-app
-          path: '/published/**'
+          path: '.'
 
   deploy_dev:
     runs-on: windows-2019
