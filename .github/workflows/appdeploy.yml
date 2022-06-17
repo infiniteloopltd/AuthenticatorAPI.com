@@ -1,6 +1,3 @@
-# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
-# More GitHub Actions for Azure: https://github.com/Azure/actions
-
 name: Build and deploy ASP app to Azure Web App - otp-auth
 
 on:
@@ -10,8 +7,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
-    runs-on: windows-latest
+  deploy_dev:
+    runs-on: windows-2019
 
     steps:
       - uses: actions/checkout@v2
@@ -23,35 +20,75 @@ jobs:
         uses: NuGet/setup-nuget@v1.0.5
 
       - name: Restore NuGet packages
-        run: nuget restore
+        run: nuget install packages.config
+
+      - name: Prepare config
+        run: |
+          del Web.config
+          ren Web.dev.config Web.config
 
       - name: Publish to folder
-        run: msbuild /nologo /verbosity:m /t:Build /t:pipelinePreDeployCopyAllFilesToOneFolder /p:_PackageTempDir="\published\" /p:Configuration=Debug
+        run: msbuild /nologo /verbosity:m /t:Build
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
-          name: otp-auth-app
-          path: '/published/**'
+          name: otp-auth-app-dev
+          path: '.'
 
-  deploy_dev:
-    runs-on: windows-latest
-    needs: build
-    environment:
-      name: 'production'
-      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
-
-    steps:
-      - name: Download artifact from build job
-        uses: actions/download-artifact@v2
+      - name: Azure Login
+        uses: Azure/login@v1.1
         with:
-          name: otp-auth-app
+          creds: ${{ secrets.AZURE_CREDS }}
+          enable-AzPSSession: true
 
-      - name: Deploy to Azure Web App
+      - name: Deploy to DEV
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'otp-auth'
-          slot-name: 'production'
+          app-name: 'otp-auth-datasec-dev'
           publish-profile: ${{ secrets.DEV_AZURE_OTP_PUBLISH_PROFILE }}
-          package: .
+          package: .    
+
+  deploy_prod:
+    runs-on: windows-2019
+    if: github.ref == 'refs/heads/master'
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup MSBuild path
+        uses: microsoft/setup-msbuild@v1.0.2
+
+      - name: Setup NuGet
+        uses: NuGet/setup-nuget@v1.0.5
+
+      - name: Restore NuGet packages
+        run: nuget install packages.config
+
+      - name: Prepare config
+        run: |
+          del Web.config
+          ren Web.prod.config Web.config
+
+      - name: Publish to folder
+        run: msbuild /nologo /verbosity:m /t:Build
+
+      - name: Upload artifact for deployment job
+        uses: actions/upload-artifact@v2
+        with:
+          name: otp-auth-app-prod
+          path: '.'
+
+      - name: Azure Login
+        uses: Azure/login@v1.1
+        with:
+          creds: ${{ secrets.AZURE_CREDS }}
+          enable-AzPSSession: true
+
+      - name: Deploy to PROD
+        id: deploy-to-webapp
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: 'otp-auth-datasec'
+          publish-profile: ${{ secrets.PROD_AZURE_OTP_PUBLISH_PROFILE }}
+          package: .  

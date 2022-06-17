@@ -7,7 +7,7 @@ namespace AuthenticatorAPI
     /// <summary>
     /// API to generate and validate google authenticator
     /// </summary>
-    [WebService(Namespace = ConfigurationManager.AppSettings["host"])]
+    [WebService(Namespace = "otpAuthApi")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]
     [System.Web.Script.Services.ScriptService]
