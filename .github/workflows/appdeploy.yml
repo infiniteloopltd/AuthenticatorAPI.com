@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  deploy_dev:
     runs-on: windows-2019
 
     steps:
@@ -33,18 +33,8 @@ jobs:
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
-          name: otp-auth-app
+          name: otp-auth-app-dev
           path: '.'
-
-  deploy_dev:
-    runs-on: windows-2019
-    needs: build
-
-    steps:
-      - name: Download artifact from build job
-        uses: actions/download-artifact@v2
-        with:
-          name: otp-auth-app
 
       - name: Azure Login
         uses: Azure/login@v1.1
@@ -58,4 +48,47 @@ jobs:
         with:
           app-name: 'otp-auth-datasec-dev'
           publish-profile: ${{ secrets.DEV_AZURE_OTP_PUBLISH_PROFILE }}
-          package: .
+          package: .    
+
+  deploy_prod:
+    runs-on: windows-2019
+    if: github.ref == 'refs/heads/master'
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup MSBuild path
+        uses: microsoft/setup-msbuild@v1.0.2
+
+      - name: Setup NuGet
+        uses: NuGet/setup-nuget@v1.0.5
+
+      - name: Restore NuGet packages
+        run: nuget install packages.config
+
+      - name: Prepare config
+        run: |
+          del Web.config
+          ren Web.prod.config Web.config
+
+      - name: Publish to folder
+        run: msbuild /nologo /verbosity:m /t:Build
+
+      - name: Upload artifact for deployment job
+        uses: actions/upload-artifact@v2
+        with:
+          name: otp-auth-app-prod
+          path: '.'
+
+      - name: Azure Login
+        uses: Azure/login@v1.1
+        with:
+          creds: ${{ secrets.AZURE_CREDS }}
+          enable-AzPSSession: true
+
+      - name: Deploy to PROD
+        id: deploy-to-webapp
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: 'otp-auth-datasec'
+          publish-profile: ${{ secrets.PROD_AZURE_OTP_PUBLISH_PROFILE }}
+          package: .  
