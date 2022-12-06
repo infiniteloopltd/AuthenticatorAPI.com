@@ -1,6 +1,7 @@
-﻿using System.Web.Services;
+using System.Web.Services;
 using System.Configuration;
 using Google.Authenticator;
+using System;
 
 namespace AuthenticatorAPI
 {
@@ -29,7 +30,8 @@ namespace AuthenticatorAPI
         public bool ValidatePin(string pin, string secretCode)
         {
             var tfa = new TwoFactorAuthenticator();
-            var isCorrectPin = tfa.ValidateTwoFactorPIN(secretCode, pin);
+            var timeTolerance = TimeSpan.FromSeconds(30);
+            var isCorrectPin = tfa.ValidateTwoFactorPIN(secretCode, pin, timeTolerance);
             return isCorrectPin;
         }
     }
