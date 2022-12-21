@@ -1,7 +1,0 @@
-c:\users\fiach\documents\visual studio 2013\Projects\AuthenticatorAPI\bin\AuthenticatorAPI.dll.config
-c:\users\fiach\documents\visual studio 2013\Projects\AuthenticatorAPI\bin\AuthenticatorAPI.dll
-c:\users\fiach\documents\visual studio 2013\Projects\AuthenticatorAPI\bin\AuthenticatorAPI.pdb
-c:\users\fiach\documents\visual studio 2013\Projects\AuthenticatorAPI\bin\Google.Authenticator.dll
-c:\users\fiach\documents\visual studio 2013\Projects\AuthenticatorAPI\obj\Debug\AuthenticatorAPI.csprojResolveAssemblyReference.cache
-c:\users\fiach\documents\visual studio 2013\Projects\AuthenticatorAPI\obj\Debug\AuthenticatorAPI.dll
-c:\users\fiach\documents\visual studio 2013\Projects\AuthenticatorAPI\obj\Debug\AuthenticatorAPI.pdb

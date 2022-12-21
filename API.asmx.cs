@@ -19,7 +19,7 @@ namespace AuthenticatorAPI
         public PairingInfo Pair(string appName, string appInfo, string secretCode)
         {
             var tfa = new TwoFactorAuthenticator();
-            var setupInfo = tfa.GenerateSetupCode(appName, appInfo, secretCode, 300, 300);
+            var setupInfo = tfa.GenerateSetupCode(appName, appInfo, secretCode, false, 6);
             var html = "<a title='Manually pair with " + setupInfo.ManualEntryKey +
                        "' href='" + ConfigurationManager.AppSettings["host"] + "'><img src='" + setupInfo.QrCodeSetupImageUrl.Replace("http://","https://") +
                        "' border=0></a>";
