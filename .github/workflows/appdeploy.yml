@@ -17,7 +17,7 @@ jobs:
         uses: microsoft/setup-msbuild@v1.1
 
       - name: Setup NuGet
-        uses: NuGet/setup-nuget@vlatest
+        uses: NuGet/setup-nuget@v1
 
       - name: Restore NuGet packages
         run: nuget restore AuthenticatorAPI.sln
@@ -52,6 +52,7 @@ jobs:
 
   deploy_prod:
     runs-on: windows-2019
+    needs: deploy_dev
     if: github.ref == 'refs/heads/master'
     steps:
       - uses: actions/checkout@v2
@@ -60,7 +61,7 @@ jobs:
         uses: microsoft/setup-msbuild@v1.1
 
       - name: Setup NuGet
-        uses: NuGet/setup-nuget@vlatest
+        uses: NuGet/setup-nuget@v1
 
       - name: Restore NuGet packages
         run: nuget restore AuthenticatorAPI.sln
