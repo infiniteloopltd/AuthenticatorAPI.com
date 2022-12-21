@@ -17,7 +17,7 @@ jobs:
         uses: microsoft/setup-msbuild@v1.1
 
       - name: Setup NuGet
-        uses: NuGet/setup-nuget@latest
+        uses: NuGet/setup-nuget@vlatest
 
       - name: Restore NuGet packages
         run: nuget restore AuthenticatorAPI.sln
@@ -60,7 +60,7 @@ jobs:
         uses: microsoft/setup-msbuild@v1.1
 
       - name: Setup NuGet
-        uses: NuGet/setup-nuget@latest
+        uses: NuGet/setup-nuget@vlatest
 
       - name: Restore NuGet packages
         run: nuget restore AuthenticatorAPI.sln
