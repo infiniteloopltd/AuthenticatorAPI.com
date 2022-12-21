@@ -36,12 +36,6 @@ jobs:
           name: otp-auth-app-dev
           path: '.'
 
-      - name: Azure Login
-        uses: Azure/login@v1.1
-        with:
-          creds: ${{ secrets.AZURE_CREDS }}
-          enable-AzPSSession: true
-
       - name: Deploy to DEV
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
@@ -79,12 +73,6 @@ jobs:
         with:
           name: otp-auth-app-prod
           path: '.'
-
-      - name: Azure Login
-        uses: Azure/login@v1.1
-        with:
-          creds: ${{ secrets.AZURE_CREDS }}
-          enable-AzPSSession: true
 
       - name: Deploy to PROD
         id: deploy-to-webapp
