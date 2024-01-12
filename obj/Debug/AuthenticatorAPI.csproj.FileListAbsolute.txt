@@ -5,3 +5,11 @@ c:\users\fiach\documents\visual studio 2013\Projects\AuthenticatorAPI\bin\Google
 c:\users\fiach\documents\visual studio 2013\Projects\AuthenticatorAPI\obj\Debug\AuthenticatorAPI.csprojResolveAssemblyReference.cache
 c:\users\fiach\documents\visual studio 2013\Projects\AuthenticatorAPI\obj\Debug\AuthenticatorAPI.dll
 c:\users\fiach\documents\visual studio 2013\Projects\AuthenticatorAPI\obj\Debug\AuthenticatorAPI.pdb
+C:\Projects\AuthenticatorAPI.com\bin\AuthenticatorAPI.dll.config
+C:\Projects\AuthenticatorAPI.com\bin\AuthenticatorAPI.dll
+C:\Projects\AuthenticatorAPI.com\bin\AuthenticatorAPI.pdb
+C:\Projects\AuthenticatorAPI.com\obj\Debug\AuthenticatorAPI.csproj.AssemblyReference.cache
+C:\Projects\AuthenticatorAPI.com\obj\Debug\AuthenticatorAPI.csproj.CoreCompileInputs.cache
+C:\Projects\AuthenticatorAPI.com\obj\Debug\AuthenticatorAPI.csproj.CopyComplete
+C:\Projects\AuthenticatorAPI.com\obj\Debug\AuthenticatorAPI.dll
+C:\Projects\AuthenticatorAPI.com\obj\Debug\AuthenticatorAPI.pdb
