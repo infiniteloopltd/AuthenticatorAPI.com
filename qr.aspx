@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="qr.aspx.cs" Inherits="AuthenticatorAPI.qr" %>

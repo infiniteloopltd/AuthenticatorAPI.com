@@ -31,7 +31,7 @@ namespace AuthenticatorAPI
         static string ConvertToNewUrl(string originalUrl)
         {
             // Replace the necessary parts of the original URL
-            var convertedUrl = originalUrl.Replace("chart.googleapis.com/chart?cht=qr&chs=", "api.qrserver.com/v1/create-qr-code/?size=");
+            var convertedUrl = originalUrl.Replace("chart.googleapis.com/chart?cht=qr&chs=", "www.AuthenticatorAPI.com/qr.aspx?size=");
             convertedUrl = convertedUrl.Replace("&chl=", "&data=");
 
             return convertedUrl;

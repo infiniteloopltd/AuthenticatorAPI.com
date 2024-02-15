@@ -77,6 +77,7 @@
     <Content Include="auth.png" />
     <Content Include="Default.aspx" />
     <Content Include="pair.aspx" />
+    <Content Include="qr.aspx" />
     <Content Include="Techie.css" />
     <Content Include="Validate.aspx" />
     <Content Include="Web.config" />
@@ -101,6 +102,13 @@
     <Compile Include="API.asmx.cs">
       <DependentUpon>API.asmx</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="qr.aspx.cs">
+      <DependentUpon>qr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="qr.aspx.designer.cs">
+      <DependentUpon>qr.aspx</DependentUpon>
     </Compile>
     <Compile Include="Validate.aspx.cs">
       <DependentUpon>Validate.aspx</DependentUpon>
