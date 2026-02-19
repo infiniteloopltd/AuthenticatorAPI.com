@@ -158,13 +158,7 @@
 
     </div>
     <!-- /container -->
-<!--
-  ============================================================
-  INSERT THIS BLOCK immediately after the closing </div>
-  of the "Demo code" row (i.e. after the </div> <!-- /container -->
-  comment), and BEFORE the <footer> tag.
-  ============================================================
--->
+
 
 <div class="container">
 
