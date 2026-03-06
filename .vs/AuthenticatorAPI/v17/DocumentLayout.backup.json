@@ -1,0 +1,137 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\projects\\AuthenticatorAPI.com\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8CD2AED3-012F-4576-AE93-77257A170F10}|AuthenticatorAPI.csproj|c:\\projects\\authenticatorapi.com\\sponsors.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8CD2AED3-012F-4576-AE93-77257A170F10}|AuthenticatorAPI.csproj|solutionrelative:sponsors.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CD2AED3-012F-4576-AE93-77257A170F10}|AuthenticatorAPI.csproj|c:\\projects\\authenticatorapi.com\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8CD2AED3-012F-4576-AE93-77257A170F10}|AuthenticatorAPI.csproj|solutionrelative:default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CD2AED3-012F-4576-AE93-77257A170F10}|AuthenticatorAPI.csproj|c:\\projects\\authenticatorapi.com\\privacy.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8CD2AED3-012F-4576-AE93-77257A170F10}|AuthenticatorAPI.csproj|solutionrelative:privacy.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CD2AED3-012F-4576-AE93-77257A170F10}|AuthenticatorAPI.csproj|C:\\projects\\AuthenticatorAPI.com\\api.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CD2AED3-012F-4576-AE93-77257A170F10}|AuthenticatorAPI.csproj|solutionrelative:api.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CD2AED3-012F-4576-AE93-77257A170F10}|AuthenticatorAPI.csproj|c:\\projects\\authenticatorapi.com\\contact.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8CD2AED3-012F-4576-AE93-77257A170F10}|AuthenticatorAPI.csproj|solutionrelative:contact.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CD2AED3-012F-4576-AE93-77257A170F10}|AuthenticatorAPI.csproj|C:\\projects\\AuthenticatorAPI.com\\qr.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CD2AED3-012F-4576-AE93-77257A170F10}|AuthenticatorAPI.csproj|solutionrelative:qr.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CD2AED3-012F-4576-AE93-77257A170F10}|AuthenticatorAPI.csproj|C:\\projects\\AuthenticatorAPI.com\\qr.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{8CD2AED3-012F-4576-AE93-77257A170F10}|AuthenticatorAPI.csproj|solutionrelative:qr.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Sponsors.aspx",
+              "DocumentMoniker": "C:\\projects\\AuthenticatorAPI.com\\Sponsors.aspx",
+              "RelativeDocumentMoniker": "Sponsors.aspx",
+              "ToolTip": "C:\\projects\\AuthenticatorAPI.com\\Sponsors.aspx",
+              "RelativeToolTip": "Sponsors.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-03-06T16:20:02.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Privacy.aspx",
+              "DocumentMoniker": "C:\\projects\\AuthenticatorAPI.com\\Privacy.aspx",
+              "RelativeDocumentMoniker": "Privacy.aspx",
+              "ToolTip": "C:\\projects\\AuthenticatorAPI.com\\Privacy.aspx",
+              "RelativeToolTip": "Privacy.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-03-06T16:06:43.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Contact.aspx",
+              "DocumentMoniker": "C:\\projects\\AuthenticatorAPI.com\\Contact.aspx",
+              "RelativeDocumentMoniker": "Contact.aspx",
+              "ToolTip": "C:\\projects\\AuthenticatorAPI.com\\Contact.aspx",
+              "RelativeToolTip": "Contact.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-03-06T16:01:35.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Default.aspx",
+              "DocumentMoniker": "C:\\projects\\AuthenticatorAPI.com\\Default.aspx",
+              "RelativeDocumentMoniker": "Default.aspx",
+              "ToolTip": "C:\\projects\\AuthenticatorAPI.com\\Default.aspx",
+              "RelativeToolTip": "Default.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-02-19T07:56:53.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "qr.aspx.cs",
+              "DocumentMoniker": "C:\\projects\\AuthenticatorAPI.com\\qr.aspx.cs",
+              "RelativeDocumentMoniker": "qr.aspx.cs",
+              "ToolTip": "C:\\projects\\AuthenticatorAPI.com\\qr.aspx.cs",
+              "RelativeToolTip": "qr.aspx.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001384|",
+              "WhenOpened": "2024-02-15T13:52:29.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "qr.aspx",
+              "DocumentMoniker": "C:\\projects\\AuthenticatorAPI.com\\qr.aspx",
+              "RelativeDocumentMoniker": "qr.aspx",
+              "ToolTip": "C:\\projects\\AuthenticatorAPI.com\\qr.aspx",
+              "RelativeToolTip": "qr.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000192|",
+              "WhenOpened": "2024-02-15T13:51:10.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "API.asmx.cs",
+              "DocumentMoniker": "C:\\projects\\AuthenticatorAPI.com\\API.asmx.cs",
+              "RelativeDocumentMoniker": "API.asmx.cs",
+              "ToolTip": "C:\\projects\\AuthenticatorAPI.com\\API.asmx.cs",
+              "RelativeToolTip": "API.asmx.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAqwBoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-12T18:01:27.075Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

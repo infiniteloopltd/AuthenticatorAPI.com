@@ -345,8 +345,12 @@
 
 
 <footer class="text-center">
-    <p> <a href="https://github.com/infiniteloopltd/AuthenticatorAPI.com">Open Source</a> on GitHub </p>
-    <p>&copy; <%=DateTime.Now.Year %> <a href="http://www.infiniteloop.ie">Infinite Loop Development Ltd</a>. </p>
+ 
+    <p> <a href="https://github.com/infiniteloopltd/AuthenticatorAPI.com">Open Source</a> on GitHub | <a href="/Sponsors.aspx">With thanks to our GitHub Sponsors</a></a></a></p>
+    <p>&copy; <%=DateTime.Now.Year %> <a href="http://www.infiniteloop.ie">Infinite Loop Development Ltd</a>  &nbsp;|&nbsp;
+        <a href="/contact.aspx">Contact Us</a> &nbsp;|&nbsp;
+        <a href="/privacy.aspx">Privacy Policy</a>
+    </p>
 </footer>
 
     <!-- Main Scripts-->
