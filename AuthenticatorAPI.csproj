@@ -64,8 +64,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Contact.aspx" />
+    <Content Include="faq.aspx" />
+    <Content Include="integrate-2fa-csharp.aspx" />
+    <Content Include="integrate-2fa-java.aspx" />
+    <Content Include="integrate-2fa-javascript.aspx" />
+    <Content Include="integrate-2fa-php.aspx" />
+    <Content Include="integrate-2fa-python.aspx" />
     <Content Include="packages.config" />
     <Content Include="AuthenticatorAPI.pdf" />
+    <Content Include="what-is-totp.aspx" />
+    <Content Include="why-sms-2fa-is-insecure.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -82,6 +90,7 @@
     <Content Include="qr.aspx" />
     <Content Include="Sponsors.aspx" />
     <Content Include="Techie.css" />
+    <Content Include="totp-vs-hotp.aspx" />
     <Content Include="Validate.aspx" />
     <Content Include="Web.config" />
     <Content Include="API.asmx" />

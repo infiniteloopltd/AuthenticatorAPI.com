@@ -92,7 +92,53 @@
 
 <body>
 
+
+
     <div class="container">
+        
+                    <!-- === Site Navigation === -->
+<nav style="background:#f8f9fa; border-top:1px solid #dee2e6; border-bottom:1px solid #dee2e6; padding:10px 0; margin-bottom:24px;">
+  <div style="max-width:960px; margin:0 auto; padding:0 20px;">
+
+    <ul style="list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:4px;">
+
+      <li><a href="/" style="display:block; padding:7px 14px; border-radius:4px; text-decoration:none; color:#333; font-size:14px; font-weight:600;">&#127968; Home</a></li>
+
+      <li style="position:relative;" class="nav-dropdown">
+        <a href="#" style="display:block; padding:7px 14px; border-radius:4px; text-decoration:none; color:#333; font-size:14px;">Integration Guides &#9660;</a>
+        <ul class="dropdown-menu" style="display:none; position:absolute; top:100%; left:0; background:#fff; border:1px solid #dee2e6; border-radius:4px; min-width:200px; padding:6px 0; z-index:100; box-shadow:0 4px 12px rgba(0,0,0,0.1); list-style:none; margin:0;">
+          <li><a href="/integrate-2fa-php.aspx" style="display:block; padding:8px 16px; text-decoration:none; color:#333; font-size:14px;">PHP</a></li>
+          <li><a href="/integrate-2fa-python.aspx" style="display:block; padding:8px 16px; text-decoration:none; color:#333; font-size:14px;">Python</a></li>
+          <li><a href="/integrate-2fa-csharp.aspx" style="display:block; padding:8px 16px; text-decoration:none; color:#333; font-size:14px;">C#</a></li>
+          <li><a href="/integrate-2fa-javascript.aspx" style="display:block; padding:8px 16px; text-decoration:none; color:#333; font-size:14px;">JavaScript / Node.js</a></li>
+          <li><a href="/integrate-2fa-java.aspx" style="display:block; padding:8px 16px; text-decoration:none; color:#333; font-size:14px;">Java</a></li>
+        </ul>
+      </li>
+
+      <li><a href="/what-is-totp.aspx" style="display:block; padding:7px 14px; border-radius:4px; text-decoration:none; color:#333; font-size:14px;">What is TOTP?</a></li>
+      <li><a href="/totp-vs-hotp.aspx" style="display:block; padding:7px 14px; border-radius:4px; text-decoration:none; color:#333; font-size:14px;">TOTP vs HOTP</a></li>
+      <li><a href="/why-sms-2fa-is-insecure.aspx" style="display:block; padding:7px 14px; border-radius:4px; text-decoration:none; color:#333; font-size:14px;">Why SMS 2FA is Insecure</a></li>
+      <li><a href="/faq.aspx" style="display:block; padding:7px 14px; border-radius:4px; text-decoration:none; color:#333; font-size:14px;">FAQ</a></li>
+
+    </ul>
+  </div>
+</nav>
+
+<script>
+    // Simple dropdown toggle
+    document.querySelectorAll('.nav-dropdown > a').forEach(function (toggle) {
+        toggle.addEventListener('click', function (e) {
+            e.preventDefault();
+            var menu = this.nextElementSibling;
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+    document.addEventListener('click', function (e) {
+        if (!e.target.closest('.nav-dropdown')) {
+            document.querySelectorAll('.dropdown-menu').forEach(function (m) { m.style.display = 'none'; });
+        }
+    });
+</script>
 
         <div class="jumbotron">
            
@@ -103,6 +149,7 @@
             </p>
           
         </div>
+
 
 
         <!-- COMPONENTS =========================================================== -->
