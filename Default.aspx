@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-
+     <script src="https://quge5.com/88/tag.min.js" data-zone="223153" async data-cfasync="false"></script>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
     <title>Authenticator API.com - An API for Google Authenticator</title>
@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="An easy and free way to implement two factor authentication (2FA) in your app.">
     <meta name="author" content="Infinite Loop Development Ltd">
-    <script src="https://quge5.com/88/tag.min.js" data-zone="223153" async data-cfasync="false"></script>
+   
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link href="Techie.css" rel="stylesheet">
